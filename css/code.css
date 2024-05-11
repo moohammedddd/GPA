@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  flex-direction:column;
+  gap: 45px;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.header .container{
+  display: flex;
+  justify-content: center;
+}
+.title{
+  text-align: center;
+  margin-top: 50px;
+  padding: 15px;
+  background-color: blueviolet;
+ width:200px;
+ border-radius: 8px;
+}  
+.title:hover{
+  background-color: rgb(175, 114, 231);
+}
+
+.body .container .num{
+text-align: center;
+display: flex;
+flex-direction: column;
+height: 50px;
+width:250px;
+margin: auto;
+padding-top:25px;
+}
+.body{
+padding-bottom: 15px;
+}
+.body .container .small{
+position: relative;
+}
+
+.body .container .form{
+margin-top:25px;
+display: grid;
+grid-template-columns: repeat(auto-fill,minmax(250px, 1fr)); 
+gap: 10px;
+}
+.body .form .one{
+display: flex;
+flex-direction: column;
+margin:auto;
+}
+.body .form label{
+padding:5px;
+margin-bottom:2px;
+}
+.body  input{
+width: 250px;
+height: 50px;
+background-color: blueviolet;
+border-radius:8px;
+color: #fff;
+font-size: 20px;
+}
+.body input:hover{
+background-color: rgb(175, 114, 231);
+letter-spacing: 2px;
+}
+.body .calc{
+padding-top: 50px;
+text-align: center;
+}
+.calc button{
+background-color: blueviolet;
+color: #fff;
+font-size: 15px;
+width: 100%;
+height: 50px;
+border-radius: 8px;
+transition: 0.5s;
+}
+.calc button:hover{
+letter-spacing: 2px;
+background-color: rgb(175, 114, 231);
+}
+#result{
+background-color: rgb(64, 21, 219);
+padding: 5px;
+width: 250px;
+margin: auto;
+}
+#result::before{
+content: 'Your gpa is: ';
+font-size: 20px;
+}
